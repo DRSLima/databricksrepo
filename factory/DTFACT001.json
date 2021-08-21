@@ -1,0 +1,9 @@
+{
+	"name": "DTFACT001",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ec1050bf-8b10-4c7f-bd56-635f2ad51422",
+		"tenantId": "ae998231-0271-4d18-9b4f-12b77aef7c6c"
+	}
+}
