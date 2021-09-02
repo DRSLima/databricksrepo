@@ -16,7 +16,6 @@
 				"fileSystem": "loaddatacontainer"
 			},
 			"columnDelimiter": ";",
-			"encodingName": "UTF-7",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
