@@ -14,7 +14,7 @@
 					},
 					"activities": [
 						{
-							"name": "CopyData_o14",
+							"name": "MysqlFromBlob",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -54,7 +54,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SourceDataset_o14",
+									"referenceName": "SourceDataset",
 									"type": "DatasetReference",
 									"parameters": {
 										"cw_tableName": "@item().source.tableName"
