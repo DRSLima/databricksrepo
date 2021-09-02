@@ -1,0 +1,13 @@
+{
+	"name": "OpenDataPGFN",
+	"properties": {
+		"description": "Open data Files in PGFN",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://dadosabertos.pgfn.gov.br/2021_trimestre_02/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
