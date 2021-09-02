@@ -1,0 +1,141 @@
+{
+	"name": "copySilwebData",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach_o14",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.cw_items",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy_o14",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": "@{item().source.tableName}"
+								},
+								{
+									"name": "Destination",
+									"value": "loaddatacontainer//@{item().destination.fileName}"
+								}
+							],
+							"typeProperties": {
+								"source": {
+									"type": "MySqlSource"
+								},
+								"sink": {
+									"type": "ParquetSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "ParquetWriteSettings"
+									}
+								},
+								"enableStaging": false,
+								"validateDataConsistency": false
+							},
+							"inputs": [
+								{
+									"referenceName": "SourceDataset_o14",
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_tableName": "@item().source.tableName"
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "DestinationDataset_o14",
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_fileName": "@item().destination.fileName"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"cw_items": {
+				"type": "Array",
+				"defaultValue": [
+					{
+						"source": {
+							"tableName": "`anexo_item`"
+						},
+						"destination": {
+							"fileName": "`anexo_item`.txt"
+						}
+					},
+					{
+						"source": {
+							"tableName": "`edital_pregao`"
+						},
+						"destination": {
+							"fileName": "`edital_pregao`.txt"
+						}
+					},
+					{
+						"source": {
+							"tableName": "`fornecedor`"
+						},
+						"destination": {
+							"fileName": "`fornecedor`.txt"
+						}
+					},
+					{
+						"source": {
+							"tableName": "`item`"
+						},
+						"destination": {
+							"fileName": "`item`.txt"
+						}
+					},
+					{
+						"source": {
+							"tableName": "`pregao_fornecedor_valor`"
+						},
+						"destination": {
+							"fileName": "`pregao_fornecedor_valor`.txt"
+						}
+					},
+					{
+						"source": {
+							"tableName": "`pregao`"
+						},
+						"destination": {
+							"fileName": "`pregao`.txt"
+						}
+					},
+					{
+						"source": {
+							"tableName": "`uasg`"
+						},
+						"destination": {
+							"fileName": "`uasg`.txt"
+						}
+					}
+				]
+			}
+		},
+		"annotations": []
+	}
+}
