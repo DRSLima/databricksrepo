@@ -14,7 +14,7 @@
 					},
 					"activities": [
 						{
-							"name": "Copy_o14",
+							"name": "CopyData_o14",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -38,7 +38,19 @@
 								"source": {
 									"type": "MySqlSource"
 								},
-								"enableStaging": false
+								"sink": {
+									"type": "DelimitedTextSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".csv"
+									}
+								},
+								"enableStaging": false,
+								"validateDataConsistency": false
 							},
 							"inputs": [
 								{
@@ -47,6 +59,12 @@
 									"parameters": {
 										"cw_tableName": "@item().source.tableName"
 									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "TargetDataset",
+									"type": "DatasetReference"
 								}
 							]
 						}

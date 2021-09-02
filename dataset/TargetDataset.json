@@ -1,5 +1,5 @@
 {
-	"name": "SilwebDataImported",
+	"name": "TargetDataset",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLStorage",
