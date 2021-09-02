@@ -1,0 +1,26 @@
+{
+	"name": "SilwebDataImported",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Load"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "loaddatacontainer"
+			},
+			"columnDelimiter": ";",
+			"encodingName": "UTF-7",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
