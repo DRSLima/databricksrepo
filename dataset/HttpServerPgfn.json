@@ -12,8 +12,6 @@
 				"type": "HttpServerLocation"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "ZipDeflate",
-			"compressionLevel": "Fastest",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
