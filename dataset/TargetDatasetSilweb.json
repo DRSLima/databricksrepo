@@ -1,12 +1,12 @@
 {
-	"name": "TargetDataset",
+	"name": "TargetDatasetSilweb",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLStorage",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "Load"
+			"name": "Carga"
 		},
 		"annotations": [],
 		"type": "DelimitedText",

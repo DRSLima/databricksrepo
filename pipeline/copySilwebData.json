@@ -54,7 +54,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SourceDataset",
+									"referenceName": "SourceDatasetSilweb",
 									"type": "DatasetReference",
 									"parameters": {
 										"cw_tableName": "@item().source.tableName"
@@ -63,7 +63,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "TargetDataset",
+									"referenceName": "TargetDatasetSilweb",
 									"type": "DatasetReference"
 								}
 							]
@@ -147,6 +147,9 @@
 					}
 				]
 			}
+		},
+		"folder": {
+			"name": "Silweb Comprasnet"
 		},
 		"annotations": []
 	}

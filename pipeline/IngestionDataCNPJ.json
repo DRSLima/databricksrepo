@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "PGFN Data",
+				"name": "Web1",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -15,14 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://dadosabertos.pgfn.gov.br/2021_trimestre_02/Dados_abertos_Nao_Previdenciario.zip",
-					"method": "GET",
-					"linkedServices": [
-						{
-							"referenceName": "OpenDataPGFN",
-							"type": "LinkedServiceReference"
-						}
-					],
 					"datasets": [
 						{
 							"referenceName": "DelimitedText1",

@@ -1,5 +1,5 @@
 {
-	"name": "SourceDataset",
+	"name": "SourceDatasetSilweb",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SourceMySql",
@@ -11,7 +11,7 @@
 			}
 		},
 		"folder": {
-			"name": "Load"
+			"name": "Carga"
 		},
 		"annotations": [],
 		"type": "MySqlTable",
