@@ -1,5 +1,5 @@
 {
-	"name": "IngestionDataCNPJ",
+	"name": "IngestionDataRfbCnpj",
 	"properties": {
 		"folder": {
 			"name": "Receita Federal"
