@@ -1,0 +1,21 @@
+{
+	"name": "HttpServerPgfn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileHttpServerPgfn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Dados_abertos_Nao_Previdenciario.zip"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
