@@ -9,8 +9,7 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "Dados_abertos_Nao_Previdenciario.zip"
+				"type": "HttpServerLocation"
 			},
 			"columnDelimiter": ",",
 			"compressionCodec": "ZipDeflate",
