@@ -13,6 +13,8 @@
 				"relativeUrl": "Dados_abertos_Nao_Previdenciario.zip"
 			},
 			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Fastest",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
