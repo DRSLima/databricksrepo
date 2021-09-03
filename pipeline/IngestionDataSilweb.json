@@ -1,5 +1,5 @@
 {
-	"name": "copySilwebData",
+	"name": "IngestionDataSilweb",
 	"properties": {
 		"activities": [
 			{
