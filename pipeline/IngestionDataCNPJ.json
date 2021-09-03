@@ -15,6 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"linkedServices": [
+						{
+							"referenceName": "OpenDataPGFN",
+							"type": "LinkedServiceReference"
+						}
+					],
 					"datasets": [
 						{
 							"referenceName": "DelimitedText1",
