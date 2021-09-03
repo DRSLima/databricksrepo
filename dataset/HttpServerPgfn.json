@@ -2,7 +2,7 @@
 	"name": "HttpServerPgfn",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "FileHttpServerPgfn",
+			"referenceName": "HttpFilesPgfn2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
