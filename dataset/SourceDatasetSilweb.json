@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"cw_tableName": {
+			"cw_tableName1": {
 				"type": "String",
 				"defaultValue": "item"
 			},
