@@ -9,10 +9,6 @@
 			"cw_tableName1": {
 				"type": "String",
 				"defaultValue": "item"
-			},
-			"cw_tableName2": {
-				"type": "string",
-				"defaultValue": "fornecedor"
 			}
 		},
 		"folder": {
