@@ -55,7 +55,10 @@
 							"inputs": [
 								{
 									"referenceName": "SourceDatasetSilweb",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_tableName": "@fornecedor().source.tableName"
+									}
 								}
 							],
 							"outputs": [
