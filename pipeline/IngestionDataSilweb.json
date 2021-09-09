@@ -57,7 +57,7 @@
 									"referenceName": "SourceDatasetSilweb",
 									"type": "DatasetReference",
 									"parameters": {
-										"cw_tableName1": "@item().source.tableName1"
+										"cw_tableName": "@item().source.tableName"
 									}
 								}
 							],
